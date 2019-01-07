@@ -1,0 +1,5 @@
+{
+  "name": "Eto API - default",
+  "version": "1.0.0",
+  "db-url": "mongodb://localhost/eto"
+}

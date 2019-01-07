@@ -1,0 +1,1 @@
+This is example of static content that can be serve using "static express middleware function"
