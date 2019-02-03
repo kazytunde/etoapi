@@ -1,5 +1,5 @@
 {
   "name": "Eto API - production",
   "version": "1.0.0",
-  "db-url": "mongodb://localhost/eto"
+  "db-url": "mongodb://localhost:27017/eto"
 }

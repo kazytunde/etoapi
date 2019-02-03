@@ -35,7 +35,9 @@ app.use(express.static("public"));
 app.use(logger);
 app.use(auth);
 
-app.use("/api/products", products);
 app.use("/", home);
+app.use("/api/products", products);
+
 const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Listen on port ${port}`));
+const server = app.listen(port, () => console.log(`Listen on port ${port}`));
+module.exports = server;

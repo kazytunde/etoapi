@@ -2,8 +2,12 @@ const mongoose = require("mongoose");
 const config = require("config");
 
 module.exports = () => {
+  const db = config.get("db-url");
   mongoose
-    .connect(config.get("db-url"))
-    .then(() => console.log("Connected to MongoDB..."))
+    .connect(
+      db,
+      { useNewUrlParser: true }
+    )
+    .then(() => console.log(`Connected to ${db}`))
     .catch(err => console.log(`Unable to connect to MongoDB: ${err.message}`));
 };
